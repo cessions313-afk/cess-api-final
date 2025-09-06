@@ -34,9 +34,9 @@ export default async function handler(request, response) {
     // 5. If the call is successful, send the data back to your website.
     const data = await apiResponse.json();
     
-    // Set CORS headers to allow your WordPress site to call this function.
-    // For production, you should replace '*' with 'https://cesstalkssports.com' for better security.
-    response.setHeader('Access-Control-Allow-Origin', '*');
+    // Set CORS headers to allow ONLY your WordPress site to call this function.
+    // This is a critical security improvement.
+    response.setHeader('Access-Control-Allow-Origin', 'https://cesstalkssports.com');
     response.setHeader('Access-Control-Allow-Methods', 'GET');
     response.setHeader('Access-Control-Allow-Headers', 'Content-Type');
 
