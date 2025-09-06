@@ -1,5 +1,5 @@
 // This file is your secure backend. It should be placed in an /api directory
-// and deployed on a service that supports Node.js serverless functions (like Vercel).
+// and deployed on a service that supports Node.js serverless functions (like Vercel). Version 2 Sep 5 
 
 export default async function handler(request, response) {
   // 1. Get the 'sport' from the query parameter sent by your website.
